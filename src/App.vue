@@ -5,11 +5,15 @@
       <div
           class="overlay_min"
       >
+        <SwitchLanguage />
         <h1>
           OUR TITLE
         </h1>
         <h4>
-          КОМПАНИЯ-РАЗРАБОТЧИК ІТ ПРОДУКТОВ
+          {{ $t('title.value', { value: 'КОМПАНИЯ-РАЗРАБОТЧИК ІТ ПРОДУКТОВ' }) }}
+        </h4>
+        <h4 style="color: white">
+          {{ $t('subtitle.value', { value: 'УСПЕШНЫЕ ПРОЕКТЫ СОЗДАЮТСЯ ТОЛЬКО КОМАНДОЙ' }) }}
         </h4>
       </div>
     </div>
@@ -31,29 +35,20 @@
   </div>
 
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </nav>
 
     <router-view/>
 
   </div>
 </template>
 
-<script setup>
-
+<script>
+  import SwitchLanguage from '/@/components/SwitchLanguage.vue'
+  export default {
+    name: 'App',
+    components: {
+      SwitchLanguage
+    },
+  }
 </script>
 
 <style>
