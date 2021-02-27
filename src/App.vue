@@ -77,6 +77,20 @@
 
   </div>
 
+  <!--  ФотоОбложка-->
+  <div class="jumbotron">
+    <div class="container">
+      <h2 style="color: white; text-shadow: 2px 2px 2px #0d0e0e">
+        {{ $t('technologies.value', { value: '' }) }}
+      </h2>
+    </div>
+  </div>
+  <iframe
+      src="https://alexeyzelenko.github.io/my-skills"
+      width="100%"
+      height="100%"
+  ></iframe>
+
 </template>
 
 <script>

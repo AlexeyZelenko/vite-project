@@ -10,7 +10,10 @@
 		/>
 
 		<div class="card-body">
-			<h5 class="card-title">
+			<h5
+          class="card-title"
+          style="color: #3f51b5"
+      >
         <p>
           {{ $t(`pictureTitle${categoryKey}`) }}
         </p>
