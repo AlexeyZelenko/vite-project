@@ -7,5 +7,17 @@
   },
   "subtitle": {
     "value": "УСПЕШНЫЕ ПРОЕКТЫ СОЗДАЮТСЯ ТОЛЬКО КОМАНДОЙ"
+  },
+  "Services": {
+    "value": "Сервисы"
+  },
+  "ANALYTICS": {
+    "value": "АНАЛИТИКА"
+  },
+  "DEVELOPMENT": {
+    "value": "РАЗРАБОТКА"
+  },
+  "CRAWLER": {
+    "value": "ОПТИМИЗАЦИЯ"
   }
 }

@@ -34,13 +34,33 @@
     </video>
   </div>
 
-  <div class="container">
-
-    <router-view/>
-
+  <div class="services">
+    <div class="container">
+      <h2>
+        {{ $t('Services.value', { value: 'Services' }) }}
+      </h2>
+      <div class="service">
+        <img src="./assets/img/web-analytics-48.png" alt="">
+        <p>
+          {{ $t('ANALYTICS.value', { value: 'ANALYTICS' }) }}
+        </p>
+      </div>
+      <div class="service">
+        <img src="./assets/img/web-development-1-48.png" alt="">
+        <p>
+          {{ $t('DEVELOPMENT.value', { value: 'DEVELOPMENT' }) }}
+        </p>
+      </div>
+      <div class="service">
+        <img src="./assets/img/web-crawler-48.png" alt="">
+        <p>
+          {{ $t('CRAWLER.value', { value: 'DEVELOPMENT' }) }}
+        </p>
+      </div>
+    </div>
   </div>
 
-<!--  ФотоОбложка-->
+  <!--  ФотоОбложка-->
   <div class="jumbotron">
     <div class="container">
       <h1>
@@ -51,31 +71,12 @@
     </div>
   </div>
 
-  <div class="services">
-    <div class="container">
-      <h2>Сервіси</h2>
-      <div class="service">
-        <i
-            aria-hidden="true"
-            class="fas fa-praying-hands fa-3x"
-        ></i>
-        <p>Виробництво</p>
-      </div>
-      <div class="service">
-        <i aria-hidden="true"
-           class="fas fa-bible fa-3x"
-        ></i>
-        <p>Навчання</p>
-      </div>
-      <div class="service">
-        <i
-            aria-hidden="true"
-            class="fas fa-hands-helping fa-3x"
-        ></i>
-        <p>Підтримка</p>
-      </div>
-    </div>
+  <div class="container">
+
+    <router-view/>
+
   </div>
+
 </template>
 
 <script>
@@ -146,13 +147,9 @@ iframe {
   text-align: center;
 }
 
-.services .fa {
-  color: #979797;
-  margin-bottom: 15px;
-}
-.services .fas {
-  color: #979797;
-  margin-bottom: 15px;
+.services p {
+  color: #5c5858;
+  margin-top: 15px;
 }
 .jumbotron {
   background-image: url(./assets/img/jumbotron.jpg);

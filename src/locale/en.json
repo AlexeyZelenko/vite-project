@@ -7,5 +7,17 @@
   },
   "subtitle": {
     "value": "SUCCESSFUL PROJECTS ARE CREATED ONLY BY A TEAM"
+  },
+  "Services": {
+    "value": "Services"
+  },
+  "ANALYTICS": {
+    "value": "ANALYTICS"
+  },
+  "DEVELOPMENT": {
+    "value": "DEVELOPMENT"
+  },
+  "CRAWLER": {
+    "value": "SEO"
   }
 }

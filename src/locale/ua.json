@@ -7,5 +7,17 @@
   },
   "subtitle": {
     "value": "УСПІШНІ ПРОЕКТИ СТВОРЮЄ ТІЛЬКИ КОМАНДА"
+  },
+  "Services": {
+    "value": "Сервіси"
+  },
+  "ANALYTICS": {
+    "value": "АНАЛІТИКА"
+  },
+  "DEVELOPMENT": {
+    "value": "РОЗРОБКА"
+  },
+  "CRAWLER": {
+    "value": "ОПТИМІЗАЦІЯ"
   }
 }
