@@ -12,9 +12,9 @@
         <h4>
           {{ $t('title.value', { value: 'КОМПАНИЯ-РАЗРАБОТЧИК ІТ ПРОДУКТОВ' }) }}
         </h4>
-        <h4 style="color: white">
+        <h5 style="color: white">
           {{ $t('subtitle.value', { value: 'УСПЕШНЫЕ ПРОЕКТЫ СОЗДАЮТСЯ ТОЛЬКО КОМАНДОЙ' }) }}
-        </h4>
+        </h5>
       </div>
     </div>
     <video
@@ -44,7 +44,7 @@
   <div class="jumbotron">
     <div class="container">
       <h1>
-        <h4 style="color: white">
+        <h4 style="color: white; text-shadow: 2px 2px 2px #0d0e0e">
           {{ $t('title.value', { value: 'КОМПАНИЯ-РАЗРАБОТЧИК ІТ ПРОДУКТОВ' }) }}
         </h4>
       </h1>
@@ -88,7 +88,7 @@
   }
 </script>
 
-<style>
+<style scoped>
 .overlay {
   background: rgba(0,0,0,0.6);
   position: absolute;
@@ -154,6 +154,17 @@ iframe {
   color: #979797;
   margin-bottom: 15px;
 }
+.jumbotron {
+  background-image: url(./assets/img/jumbotron.jpg);
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 250px;
+  text-align: center;
+  clear: both;
+}
 /* Media Queries */
 @media (max-width: 767px) {
   .overlay_min {
@@ -161,6 +172,9 @@ iframe {
   }
   h1 {
     font-size: 30px;
+  }
+  h5 {
+    font-size: 16px;
   }
   iframe {
     width: 100%;
@@ -189,6 +203,9 @@ iframe {
   h1 {
     font-size: 25px;
   }
+  h5 {
+    font-size: 16px;
+  }
   iframe {
     margin-top: 20%;
     width: 100%;
@@ -207,16 +224,6 @@ iframe {
   }
 
 }
-.jumbotron {
-  background-image: url(./assets/img/jumbotron.jpg);
-  background-size: cover;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  min-height: 250px;
-  text-align: center;
-  clear: both;
-}
+
 
 </style>
