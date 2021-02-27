@@ -61,7 +61,7 @@
   </div>
 
   <!--  ФотоОбложка-->
-  <div class="jumbotron">
+  <div class="jumbotron2">
     <div class="container">
       <h1>
         <h4 style="color: white; text-shadow: 2px 2px 2px #0d0e0e">
@@ -96,15 +96,53 @@
       height="100%"
   ></iframe>
 
+  <!--  Фото с описанием-->
+  <CatalogItem
+      v-for="(product, i) in sections"
+      :key="product.title"
+      :index="i"
+      :data="product"
+  ></CatalogItem>
+
 </template>
 
 <script>
+import CatalogItem from '/@/components/CatalogItem.vue'
   import SwitchLanguage from '/@/components/SwitchLanguage.vue'
   export default {
     name: 'App',
     components: {
-      SwitchLanguage
+      SwitchLanguage,
+      CatalogItem
     },
+    data: () => ({
+      sections: [
+        {
+          title: 'https://bv.ck.ua/',
+          text: 'Сайт на Vue3 + TypeScript',
+          sectionClass: 'sec1',
+          seen: true
+        },
+        {
+          title: 'https://nask.com.ua/',
+          text:'Сайт построен на Vue2 используя NUXT',
+          sectionClass: 'sec2',
+          seen: true
+        },
+        {
+          title: 'https://teploservis68.com.ua/',
+          text: '',
+          sectionClass: 'sec3',
+          seen: false
+        },
+        {
+          title: 'https://puh-g.ck.ua/',
+          text: '',
+          sectionClass: 'sec4',
+          seen: false
+        },
+      ]
+    }),
   }
 </script>
 
