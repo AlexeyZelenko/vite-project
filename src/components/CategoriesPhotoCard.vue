@@ -11,23 +11,14 @@
 
 		<div class="card-body">
 			<h5 class="card-title">
-				{{pictureTitle}}
+        <p>
+          {{ $t(`pictureTitle${categoryKey}`) }}
+        </p>
 			</h5>
       <p>
-        {{pictureText}}
+        {{ $t(`pictureText${categoryKey}`) }}
       </p>
 		</div>
-<!--		<router-link-->
-<!--				style="margin-bottom: 10px;"-->
-<!--				:to="{ name: 'edit_picture', params: { id: picture.key }}"-->
-<!--		>-->
-<!--			<button-->
-<!--					type="button"-->
-<!--					class="btn btn-outline-success"-->
-<!--			>-->
-<!--				{{ $t('more_details.value', { value: 'детальніше' }) }}-->
-<!--			</button>-->
-<!--		</router-link>-->
 	</div>
 </template>
 
@@ -61,7 +52,7 @@
               return props.picture.text
             })
             const categoryKey = computed(() => {
-                return props.picture.key
+                return props.picture.id
             })
 
             onMounted(() => {

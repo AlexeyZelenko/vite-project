@@ -45,19 +45,19 @@ export default defineComponent({
     }
     const arrayPictures = ref([
       {
-        id: 1,
+        id: '1',
         title: 'РАЗРАБОТКА САЙТОВ',
         imageCode: '1FmpsOEf2mYFSAHja3K6DAk0xmCaiu_24',
         text: 'Создание цифроввых продуктов'
       },
       {
-        id: 2,
+        id: '2',
         title: 'ИНТЕРНЕТ-МАГАЗИНЫ',
         imageCode: '152LGxL6NQDEeL2_evXxzw1HFNa6i75aY',
         text: 'Создаем качественные, простые и сложные интернет-магазины'
       },
       {
-        id: 3,
+        id: '3',
         title: 'WEB-ПРИЛОЖЕНИЕ',
         imageCode: '1hYtF25Z4YPllKqohh0-Ad5rmNVz_8fIt',
         text: 'Проэктирование и создание инструментов для бизнеса'

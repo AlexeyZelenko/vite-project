@@ -19,5 +19,17 @@
   },
   "CRAWLER": {
     "value": "SEO"
-  }
+  },
+  "title1": {
+    "value": "1"
+  },
+  "pictureTitle": {
+    "value": "4234"
+  },
+  "pictureTitle1": "WEBSITE DEVELOPMENT",
+  "pictureTitle2": "INTERNET SHOPS",
+  "pictureTitle3": "WEB APP",
+  "pictureText1": "Digital product creation",
+  "pictureText2": "We create high-quality, simple and complex online stores",
+  "pictureText3": "Designing and creating business tools"
 }
