@@ -78,13 +78,18 @@
   </div>
 
   <!--  ФотоОбложка-->
-  <div class="jumbotron">
-    <div class="container">
-      <h2 style="color: white; text-shadow: 2px 2px 2px #0d0e0e">
-        {{ $t('technologies.value', { value: '' }) }}
-      </h2>
-    </div>
-  </div>
+<!--  <div class="jumbotron2">-->
+<!--    <div class="container">-->
+<!--      <h2 style="color: white; text-shadow: 2px 2px 2px #0d0e0e">-->
+<!--        {{ $t('technologies.value', { value: '' }) }}-->
+<!--      </h2>-->
+<!--    </div>-->
+<!--  </div>-->
+
+
+  <h2 style="color: white; text-shadow: 2px 2px 2px #0d0e0e">
+    {{ $t('technologies.value', { value: '' }) }}
+  </h2>
   <iframe
       src="https://alexeyzelenko.github.io/my-skills"
       width="100%"
@@ -167,6 +172,17 @@ iframe {
 }
 .jumbotron {
   background-image: url(./assets/img/jumbotron.jpg);
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 250px;
+  text-align: center;
+  clear: both;
+}
+.jumbotron2 {
+  background-image: url(./assets/img/jumbotron2.jpg);
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
