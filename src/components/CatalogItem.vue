@@ -109,4 +109,17 @@ export default {
   .sec-text__dsc {
     font-size: 1em;
   }
+
+  @media (max-width: 767px){
+    section.sec2 {
+      background: url('../assets/images/moby/moby-1.png') center / cover;
+      background-attachment: fixed;
+    }
+  }
+  @media (max-width: 500px){
+    section.sec2 {
+      background: url('../assets/images/moby/moby-1.png')  center / cover;
+      background-attachment: fixed;
+    }
+  }
 </style>

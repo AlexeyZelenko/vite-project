@@ -239,7 +239,7 @@ iframe {
     font-size: 30px;
   }
   h5 {
-    font-size: 16px;
+    font-size: 12px;
   }
   iframe {
     width: 100%;
@@ -269,7 +269,7 @@ iframe {
     font-size: 25px;
   }
   h5 {
-    font-size: 16px;
+    font-size: 12px;
   }
   iframe {
     margin-top: 20%;
