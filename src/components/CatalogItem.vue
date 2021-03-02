@@ -5,6 +5,14 @@
     >
       <h3 class="sec-text__title">{{title}}</h3>
       <p class="sec-text__dsc">{{text}}</p>
+      <a :href="title">
+      <button type="button" class="btn btn-outline-primary">
+        {{ $t('link.value', { value: '' }) }}
+      </button>
+      </a>
+<!--      <button type="button" class="btn btn-outline-danger">Danger</button>-->
+<!--      <button type="button" class="btn btn-outline-warning">Warning</button>-->
+<!--      <button type="button" class="btn btn-outline-info">Info</button>-->
     </div>
     <section
       ref="el"
