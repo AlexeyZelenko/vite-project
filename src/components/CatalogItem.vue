@@ -70,11 +70,11 @@ export default {
     background-attachment: fixed;
   }
   section.sec3 {
-    background: url('../assets/images/kartinka.jpg')no-repeat center / cover;
+    background: url('../assets/images/picture-3.png')no-repeat center / cover;
     background-attachment: fixed;
   }
   section.sec4 {
-    background: url('../assets/images/kartinka.jpg')no-repeat center / cover;
+    background: url('../assets/images/moby/moby-4.png')no-repeat center / cover;
     background-attachment: fixed;
   }
   section.sec5 {
@@ -111,14 +111,30 @@ export default {
   }
 
   @media (max-width: 767px){
+    section.sec1 {
+      background: url('../assets/images/moby/moby-2.png') center / cover;
+      background-attachment: fixed;
+    }
     section.sec2 {
       background: url('../assets/images/moby/moby-1.png') center / cover;
+      background-attachment: fixed;
+    }
+    section.sec3 {
+      background: url('../assets/images/moby/moby-3.png') center / cover;
       background-attachment: fixed;
     }
   }
   @media (max-width: 500px){
     section.sec2 {
       background: url('../assets/images/moby/moby-1.png')  center / cover;
+      background-attachment: fixed;
+    }
+    section.sec1 {
+      background: url('../assets/images/moby/moby-2.png') center / cover;
+      background-attachment: fixed;
+    }
+    section.sec3 {
+      background: url('../assets/images/moby/moby-3.png') center / cover;
       background-attachment: fixed;
     }
   }
