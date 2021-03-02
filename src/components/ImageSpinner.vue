@@ -5,7 +5,8 @@
 	</div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
+@import '../scss/_variables.scss';
 	.ripple {
 		display: inline-block;
 		position: absolute;

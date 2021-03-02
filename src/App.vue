@@ -118,25 +118,29 @@ import CatalogItem from '/@/components/CatalogItem.vue'
     data: () => ({
       sections: [
         {
-          title: 'https://bv.ck.ua',
+          title: 'bv.ck.ua',
+          link: 'https://bv.ck.ua',
           text: 'Vue3, TypeScript, Firebase, Vuex, GoogleDisk, API Youtube, API Google Maps, собственные NPM',
           sectionClass: 'sec1',
           seen: true
         },
         {
-          title: 'https://nask.com.ua',
+          title: 'nask.com.ua',
+          link: 'https://nask.com.ua',
           text:'Vue2, Nuxt, Vuex, Video, Music',
           sectionClass: 'sec2',
           seen: true
         },
         {
-          title: 'https://teploservis68.com.ua',
+          title: 'teploservis68.com.ua',
+          link: 'https://teploservis68.com.ua',
           text: 'Nuxt, Vue2, Firebase, Google Аналитика, Vuetify',
           sectionClass: 'sec3',
           seen: false
         },
         {
-          title: 'https://puh-g.ck.ua/',
+          title: 'puh-g.ck.ua',
+          link: 'https://puh-g.ck.ua/',
           text: 'Vue3, Vite, Bootstrap',
           sectionClass: 'sec4',
           seen: false

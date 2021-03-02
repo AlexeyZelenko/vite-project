@@ -5,7 +5,7 @@
     >
       <h3 class="sec-text__title">{{title}}</h3>
       <p class="sec-text__dsc">{{text}}</p>
-      <a :href="title">
+      <a :href="link">
       <button type="button" class="btn btn-outline-primary">
         {{ $t('link.value', { value: '' }) }}
       </button>
@@ -36,6 +36,10 @@ export default {
     const title = computed(
       () => props.data.title
     )
+
+    const link = computed(
+        () => props.data.link
+    )
     const text = computed(
       () => props.data.text
     )
@@ -51,6 +55,7 @@ export default {
       unobserve(el.value)
     })
     return {
+      link,
       title,
       text,
       sectionClass,
