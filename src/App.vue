@@ -6,9 +6,9 @@
           class="overlay_min"
       >
         <SwitchLanguage />
-        <h1>
-          OUR TITLE
-        </h1>
+<!--        <h1>-->
+<!--          OUR TITLE-->
+<!--        </h1>-->
         <h4>
           {{ $t('title.value', { value: 'КОМПАНИЯ-РАЗРАБОТЧИК ІТ ПРОДУКТОВ' }) }}
         </h4>
@@ -71,21 +71,40 @@
     </div>
   </div>
 
+
+<!--  Сервисы-->
+  <div
+      class="container"
+      style="margin-top: 50px"
+  >
+    <div
+        class="row row-cols-1 row-cols-md-2 g-4 "
+        v-for="picture in arrayPictures"
+        :key="picture.key"
+        style="justify-content: center"
+    >
+      <div class="col p-4">
+        <CategoriesPhotoCard :picture="picture"/>
+      </div>
+    </div>
+  </div>
+
+  <!--  ФотоОбложка-->
+  <div class="jumbotron2">
+    <div class="container">
+      <h1>
+        <h4 style="color: white; text-shadow: 2px 2px 2px #0d0e0e">
+          {{ $t('ourProducts.value', { value: '' }) }}
+        </h4>
+      </h1>
+    </div>
+  </div>
+
   <div class="container">
 
     <router-view/>
 
   </div>
-
-  <!--  ФотоОбложка-->
-<!--  <div class="jumbotron2">-->
-<!--    <div class="container">-->
-<!--      <h2 style="color: white; text-shadow: 2px 2px 2px #0d0e0e">-->
-<!--        {{ $t('technologies.value', { value: '' }) }}-->
-<!--      </h2>-->
-<!--    </div>-->
-<!--  </div>-->
-
 
   <h2 style="color: white; text-shadow: 2px 2px 2px #0d0e0e">
     {{ $t('technologies.value', { value: '' }) }}
@@ -96,58 +115,68 @@
       height="100%"
   ></iframe>
 
-  <!--  Фото с описанием-->
-  <CatalogItem
-      v-for="(product, i) in sections"
-      :key="product.title"
-      :index="i"
-      :data="product"
-  ></CatalogItem>
 
 </template>
 
 <script>
-import CatalogItem from '/@/components/CatalogItem.vue'
-  import SwitchLanguage from '/@/components/SwitchLanguage.vue'
-  export default {
+import SwitchLanguage from '/@/components/SwitchLanguage.vue'
+import CategoriesPhotoCard from '/@/components/CategoriesPhotoCard.vue'
+import { defineAsyncComponent, defineComponent, ref, reactive, computed } from "vue"
+
+
+export default defineComponent({
     name: 'App',
     components: {
       SwitchLanguage,
-      CatalogItem
+      CategoriesPhotoCard
+
     },
-    data: () => ({
-      sections: [
+    setup () {
+      const theme = ref({
+        color: '#rrggbb'
+      })
+      const myColor = ref( '#2c790d')
+      const colorBind = computed(() => myColor.value)
+
+      const isShow = ref(false)
+      const name = computed (() => isShow.value ? 'MyComponent' : '')
+
+
+      const onClick = () => {
+        isShow.value = !isShow.value;
+      }
+      const arrayPictures = ref([
         {
-          title: 'bv.ck.ua',
-          link: 'https://bv.ck.ua',
-          text: 'Vue3, TypeScript, Firebase, Vuex, GoogleDisk, API Youtube, API Google Maps, собственные NPM',
-          sectionClass: 'sec1',
-          seen: true
+          id: '1',
+          title: 'РАЗРАБОТКА САЙТОВ',
+          imageCode: '1FmpsOEf2mYFSAHja3K6DAk0xmCaiu_24',
+          text: 'Создание цифроввых продуктов'
         },
         {
-          title: 'nask.com.ua',
-          link: 'https://nask.com.ua',
-          text:'Vue2, Nuxt, Vuex, Video, Music',
-          sectionClass: 'sec2',
-          seen: true
+          id: '2',
+          title: 'ИНТЕРНЕТ-МАГАЗИНЫ',
+          imageCode: '152LGxL6NQDEeL2_evXxzw1HFNa6i75aY',
+          text: 'Создаем качественные, простые и сложные интернет-магазины'
         },
         {
-          title: 'teploservis68.com.ua',
-          link: 'https://teploservis68.com.ua',
-          text: 'Nuxt, Vue2, Firebase, Google Аналитика, Vuetify',
-          sectionClass: 'sec3',
-          seen: false
-        },
-        {
-          title: 'puh-g.ck.ua',
-          link: 'https://puh-g.ck.ua/',
-          text: 'Vue3, Vite, Bootstrap',
-          sectionClass: 'sec4',
-          seen: false
-        },
-      ]
-    }),
-  }
+          id: '3',
+          title: 'WEB-ПРИЛОЖЕНИЕ',
+          imageCode: '1hYtF25Z4YPllKqohh0-Ad5rmNVz_8fIt',
+          text: 'Проэктирование и создание инструментов для бизнеса'
+        }
+      ])
+
+      return {
+        arrayPictures,
+        onClick,
+        name,
+        isShow,
+        myColor,
+        colorBind,
+        theme
+      }
+    },
+  })
 </script>
 
 <style scoped>

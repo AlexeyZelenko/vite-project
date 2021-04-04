@@ -31,5 +31,14 @@
   },
   "link": {
     "value": "Перейти"
-  }
+  },
+  "product": {
+    "value": "детальніше"
+  },
+  "ourProducts": {
+    "value": "НАШІ ПРОДУКТИ"
+  },
+  "ButtonBack": {
+  "value": "назад"
+}
 }

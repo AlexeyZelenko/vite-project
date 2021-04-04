@@ -9,10 +9,17 @@
       <button type="button" class="btn btn-outline-primary">
         {{ $t('link.value', { value: '' }) }}
       </button>
+      <router-link
+          :to="{name: 'product', params: { title }}"
+      >
+        <button
+            type="button"
+            class="btn btn-outline-primary mx-2"
+        >
+          {{ $t('product.value', { value: '' }) }}
+        </button>
+      </router-link>
       </a>
-<!--      <button type="button" class="btn btn-outline-danger">Danger</button>-->
-<!--      <button type="button" class="btn btn-outline-warning">Warning</button>-->
-<!--      <button type="button" class="btn btn-outline-info">Info</button>-->
     </div>
     <section
       ref="el"
@@ -33,6 +40,11 @@ export default {
   setup (props) {
     const el = ref(null)
     const { observe, unobserve, isShown } = useIntersectionObserver()
+
+    const id = computed(
+        () => props.data.id
+    )
+
     const title = computed(
       () => props.data.title
     )
@@ -55,6 +67,7 @@ export default {
       unobserve(el.value)
     })
     return {
+      id,
       link,
       title,
       text,
@@ -67,7 +80,7 @@ export default {
 </script>
 
 <style scoped>
-  body {margin: 0;padding: 0;font-family: sans-serif;color: #262626;}
+  body {margin: 0;padding: 10px; font-family: sans-serif;color: #262626;}
 
   section {
     width: 100%;
@@ -91,7 +104,7 @@ export default {
     background-attachment: fixed;
   }
   section.sec5 {
-    background: url('../assets/images/kartinka.jpg')no-repeat center / cover;
+    background: url('../assets/images/picture-4.png')no-repeat center / cover;
     background-attachment: fixed;
   }
   section.sec6 {
@@ -124,30 +137,50 @@ export default {
   }
 
   @media (max-width: 767px){
+    section {
+      padding: 20px;
+    }
     section.sec1 {
-      background: url('../assets/images/moby/moby-2.png') center / cover;
+      background: url('../assets/images/moby/moby-2.png')no-repeat center;
       background-attachment: fixed;
     }
     section.sec2 {
-      background: url('../assets/images/moby/moby-1.png') center / cover;
+      background: url('../assets/images/moby/moby-1.png')no-repeat center;
       background-attachment: fixed;
     }
     section.sec3 {
-      background: url('../assets/images/moby/moby-3.png') center / cover;
+      background: url('../assets/images/moby/moby-3.png')no-repeat center;
       background-attachment: fixed;
     }
+    section.sec4 {
+      background: url('../assets/images/moby/moby-4.png')no-repeat center;
+      background-attachment: fixed;
+    }
+    section.sec5 {
+      background: url('../assets/images/moby/moby-5.png')no-repeat center;
+      background-attachment: fixed;
+    }
+
   }
   @media (max-width: 500px){
     section.sec2 {
-      background: url('../assets/images/moby/moby-1.png')  center / cover;
+      background: url('../assets/images/moby/moby-1.png')no-repeat  center;
       background-attachment: fixed;
     }
     section.sec1 {
-      background: url('../assets/images/moby/moby-2.png') center / cover;
+      background: url('../assets/images/moby/moby-2.png')no-repeat center;
       background-attachment: fixed;
     }
     section.sec3 {
-      background: url('../assets/images/moby/moby-3.png') center / cover;
+      background: url('../assets/images/moby/moby-3.png')no-repeat center;
+      background-attachment: fixed;
+    }
+    section.sec4 {
+      background: url('../assets/images/moby/moby-4.png')no-repeat center;
+      background-attachment: fixed;
+    }
+    section.sec5 {
+      background: url('../assets/images/moby/moby-5.png')no-repeat center;
       background-attachment: fixed;
     }
   }
