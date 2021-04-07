@@ -6,9 +6,9 @@
           class="overlay_min"
       >
         <SwitchLanguage />
-<!--        <h1>-->
-<!--          OUR TITLE-->
-<!--        </h1>-->
+        <h1>
+          INFINITE
+        </h1>
         <h4>
           {{ $t('title.value', { value: 'КОМПАНИЯ-РАЗРАБОТЧИК ІТ ПРОДУКТОВ' }) }}
         </h4>
