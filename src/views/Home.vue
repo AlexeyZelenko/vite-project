@@ -53,7 +53,7 @@ export default {
       {
         id: 5,
         title: 'shop',
-        link: 'https://online-shop-34af2.web.app/',
+        link: 'https://damask.in.ua/',
         text: 'Vue2, Firebase, Google Аналитика, Vuetify',
         sectionClass: 'sec5',
         seen: false

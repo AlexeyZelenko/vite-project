@@ -8,6 +8,7 @@ import 'firebase/firestore'
 import 'firebase/database'
 import 'firebase/auth'
 import 'firebase/storage'
+import 'firebase/analytics'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'//?Выдает ошибку в консоли
 import { createI18n } from 'vue-i18n'
@@ -21,8 +22,12 @@ export const db = firebase.initializeApp({
   projectId: "business-vue3",
   storageBucket: "business-vue3.appspot.com",
   messagingSenderId: "799176700714",
-  appId: "1:799176700714:web:6ec1be6463afc18d7aa453"
+  appId: "1:799176700714:web:6ec1be6463afc18d7aa453",
+  measurementId: "G-GH87QP28XE"
 }).firestore()
+// Initialize Firebase
+export const analytics = firebase.analytics();
+
 export const storage = firebase.storage()
 export const auth = firebase.auth()
 
