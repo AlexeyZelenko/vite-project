@@ -12,9 +12,11 @@
         <h4>
           {{ $t('title.value', { value: 'КОМПАНИЯ-РАЗРАБОТЧИК ІТ ПРОДУКТОВ' }) }}
         </h4>
-        <h5 style="color: white">
-          {{ $t('subtitle.value', { value: 'УСПЕШНЫЕ ПРОЕКТЫ СОЗДАЮТСЯ ТОЛЬКО КОМАНДОЙ' }) }}
-        </h5>
+<!--        <h5-->
+<!--            style="color: white; margin-bottom: 50px"-->
+<!--        >-->
+<!--          {{ $t('subtitle.value', { value: 'УСПЕШНЫЕ ПРОЕКТЫ СОЗДАЮТСЯ ТОЛЬКО КОМАНДОЙ' }) }}-->
+<!--        </h5>-->
       </div>
     </div>
     <video
