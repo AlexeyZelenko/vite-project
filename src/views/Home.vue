@@ -57,6 +57,14 @@ export default {
         sectionClass: 'sec5',
         seen: false
       },
+      {
+        id: 6,
+        title: 'test',
+        link: 'https://online-shop-34af2.web.app/',
+        text: '',
+        sectionClass: 'sec6',
+        seen: false
+      },
     ]
   }),
 }
