@@ -1,0 +1,8 @@
+name: Deploying to Firebase
+on: [push]
+jobs:
+  print:
+    runs-on: windows-latest
+    steps:
+      - name: Print to console
+        run: echo Hello GH Actions!
