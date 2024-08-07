@@ -29,7 +29,7 @@ export default {
       {
         id: 2,
         title: 'nask.com.ua',
-        link: 'https://nask.com.ua',
+        link: 'https://nusk-9e136.firebaseapp.com/',
         text:'Vue2, Nuxt, Vuex, Video, Music',
         sectionClass: 'sec2',
         seen: true
@@ -37,23 +37,22 @@ export default {
       {
         id: 3,
         title: 'teploservis68.com.ua',
-        link: 'https://teploservis68.com.ua',
+        link: 'https://nuxt-shop-9842c.web.app/',
         text: 'Nuxt, Vue2, Firebase, Google Аналитика, Vuetify',
         sectionClass: 'sec3',
         seen: false
       },
       {
         id: 4,
-        title: 'puh-g.ck.ua',
-        link: 'https://puh-g.ck.ua/',
-        text: 'Vue3, Vite, Bootstrap',
+        title: 'COMFORT.UA',
+        link: 'https://prazdnik-37ddf.web.app/flat',
         sectionClass: 'sec4',
         seen: false
       },
       {
         id: 5,
         title: 'shop',
-        link: 'https://damask.in.ua/',
+        link: 'https://online-shop-34af2.web.app/',
         text: 'Vue2, Firebase, Google Аналитика, Vuetify',
         sectionClass: 'sec5',
         seen: false
