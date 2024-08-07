@@ -2,7 +2,9 @@ name: Deploying to Firebase
 on: [push]
 jobs:
   print:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Print to console
         run: echo Hello GH Actions!
+      - name: Print few to lines
+        run: echo Actions!
