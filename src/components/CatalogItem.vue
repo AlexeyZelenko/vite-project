@@ -5,7 +5,7 @@
     >
       <h3 class="sec-text__title">{{title}}</h3>
       <p class="sec-text__dsc">{{text}}</p>
-      <a :href="link">
+      <a :href="link" target="_blank">
       <button type="button" class="btn btn-outline-primary">
         {{ $t('link.value', { value: '' }) }}
       </button>
