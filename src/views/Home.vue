@@ -52,9 +52,17 @@ export default {
       {
         id: 5,
         title: 'shop',
-        link: 'https://online-shop-34af2.web.app/',
+        link: 'https://oleksandr-3787c.web.app/',
         text: 'Vue2, Firebase, Google Аналитика, Vuetify',
         sectionClass: 'sec5',
+        seen: false
+      },
+      {
+        id: 6,
+        title: 'Worship',
+        link: 'https://online-shop-34af2.web.app/',
+        text: 'Vue2, Firebase, Google Аналитика, Vuetify',
+        sectionClass: 'sec6',
         seen: false
       },
     ]
