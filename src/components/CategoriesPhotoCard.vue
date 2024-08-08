@@ -43,7 +43,7 @@
 
             const pictureImageCode = computed(() => {
               const a = props.picture.id
-              return `../src/assets/images/categories/${a}.jpeg`
+              return `./src/assets/img/categories/${a}.jpeg`
             })
             const pictureTitle = computed(() => {
                 return props.picture.title
