@@ -61,7 +61,7 @@ export default {
         id: 6,
         title: 'Worship',
         link: 'https://online-shop-34af2.web.app/',
-        text: 'Vue2, Firebase, Google Аналитика, Vuetify',
+        text: 'Vue2, Firebase, Google Аналитика, Vuetify, CI/CD',
         sectionClass: 'sec6',
         seen: false
       },
