@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import CatalogItem from '/@/components/CatalogItem.vue'
+import CatalogItem from '@/components/CatalogItem.vue'
 
 export default {
   name: 'Home',

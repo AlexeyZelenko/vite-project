@@ -117,8 +117,8 @@
 </template>
 
 <script>
-import SwitchLanguage from '/@/components/SwitchLanguage.vue'
-import CategoriesPhotoCard from '/@/components/CategoriesPhotoCard.vue'
+import SwitchLanguage from '@/components/SwitchLanguage.vue'
+import CategoriesPhotoCard from '@/components/CategoriesPhotoCard.vue'
 import { defineComponent, ref, computed } from "vue"
 
 

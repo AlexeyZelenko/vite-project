@@ -5,7 +5,6 @@
 	>
 		<ImageItem
 			class="opacity"
-			v-if="isShown"
 			:source="pictureImageCode"
 		/>
 
@@ -26,7 +25,7 @@
 <script>
     import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
     import useIntersectionObserver from '../composables/useIntersectionObserver'
-    import ImageItem from '../components/ImageItem.vue'
+    import ImageItem from '@/components/ImageItem.vue'
 
     export default {
         name: 'CategoriesPhotoCard',
@@ -43,7 +42,7 @@
 
             const pictureImageCode = computed(() => {
               const a = props.picture.id
-              return `./src/assets/img/categories/${a}.jpeg`
+              return new URL(`../assets/img/categories/${a}.jpeg`, import.meta.url).href;
             })
             const pictureTitle = computed(() => {
                 return props.picture.title
