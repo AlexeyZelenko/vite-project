@@ -73,28 +73,27 @@ export default {
         id: 1,
         title: 'bv.ck.ua',
         link: 'https://bv.ck.ua',
-        text: 'Vue3, TypeScript, Firebase, Vuex, GoogleDisk, API Youtube, API Google Maps, собственные NPM',
+        text: 'Vue3, TypeScript, Firebase, Vuex, GoogleDisk, API Youtube, API Google Maps, NPM',
         sectionClass: 'sec1',
         seen: true,
         arrayInfo: [
           {
             id: 1,
             name: 'VUE3',
-            description: 'Выбрали Vue3, так ка очень хотелось обуздать новую технологию)',
+            description: 'We chose Vue3 because we really wanted to master the new technology)',
             description2: 'https://v3.vuejs.org/',
           },
           {
             id: 2,
             name: 'FIREBASE',
-            description: 'Firebase - прекрасная технология от Google. Очень много крутых фишек. Например база данных в реальгом времени.',
-            description2: 'https://firebase.google.com/'
+            description: 'Firebase is a great technology from Google. It has many cool features, like a real-time database.',
+            description2: 'https://firebase.google.com/',
           },
           {
             id: 3,
             name: 'BOOTSTRAP',
-            description: 'Быстро создавайте и настраивайте адаптивные сайты, ориентированные на мобильные устройства, с помощью Bootstrap, самого популярного в мире инструментария с открытым исходным кодом, включающего переменные и миксины Sass, гибкую сеточную систему, обширные готовые компоненты и мощные плагины JavaScript.\n' +
-                '\n',
-            description2: 'https://getbootstrap.com/'
+            description: 'Quickly design and customize responsive, mobile-first sites with Bootstrap, the world’s most popular open source toolkit, featuring Sass variables and mixins, a flexible grid system, extensive prebuilt components, and powerful JavaScript plugins.',
+            description2: 'https://getbootstrap.com/',
           }
         ],
       },
@@ -109,26 +108,26 @@ export default {
           {
             id: 1,
             name: 'VUE2',
-            description: 'Vue - шустрый, производительный, разносторонний.',
+            description: 'Vue - fast, performant, and versatile.',
             description2: 'https://v3.vuejs.org/',
           },
           {
             id: 2,
             name: 'NUXT',
-            description: 'Очень помогает SEO. Роботы, ищущие информацию в интернете, от него в восхищении.',
-            description2: 'https://ru.nuxtjs.org/',
+            description: 'Greatly helps with SEO. Search engine robots are delighted with it.',
+            description2: 'https://nuxtjs.org/',
           },
           {
             id: 3,
             name: 'FIREBASE',
-            description: 'Firebase - прекрасная технология от Google. Очень много крутых фишек. Например база данных в реальгом времени.',
-            description2: 'https://firebase.google.com/'
+            description: 'Firebase is a great technology from Google. It has many cool features, like a real-time database.',
+            description2: 'https://firebase.google.com/',
           },
           {
             id: 4,
             name: 'VUETIFY',
-            description: 'Vuetify - это библиотека пользовательского интерфейса Vue с красиво созданными вручную компонентами материалов.',
-            description2: 'https://vuetifyjs.com'
+            description: 'Vuetify is a Vue UI library with beautifully handcrafted material components.',
+            description2: 'https://vuetifyjs.com',
           }
         ],
       },
@@ -143,26 +142,26 @@ export default {
           {
             id: 1,
             name: 'VUE2',
-            description: 'Vue - шустрый, производительный, разносторонний.',
+            description: 'Vue - fast, performant, and versatile.',
             description2: 'https://v3.vuejs.org/',
           },
           {
             id: 2,
             name: 'NUXT',
-            description: 'Очень помогает SEO. Роботы, ищущие информацию в интернете, от него в восхищении.',
+            description: 'Greatly helps with SEO. Search engine robots are delighted with it.',
             description2: 'https://ru.nuxtjs.org/',
           },
           {
             id: 3,
             name: 'FIREBASE',
-            description: 'Firebase - прекрасная технология от Google. Очень много крутых фишек. Например база данных в реальгом времени.',
-            description2: 'https://firebase.google.com/'
+            description: 'Firebase is a great technology from Google. It has many cool features, like a real-time database.',
+            description2: 'https://firebase.google.com/',
           },
           {
             id: 4,
             name: 'VUETIFY',
-            description: 'Vuetify - это библиотека пользовательского интерфейса Vue с красиво созданными вручную компонентами материалов.',
-            description2: 'https://vuetifyjs.com'
+            description: 'Vuetify is a Vue UI library with beautifully handcrafted material components.',
+            description2: 'https://vuetifyjs.com',
           }
         ],
       },
@@ -177,29 +176,28 @@ export default {
           {
             id: 1,
             name: 'VUE3',
-            description: 'Выбрали Vue3, так ка очень хотелось обуздать новую технологию)',
+            description: 'We chose Vue3 because we really wanted to master the new technology)',
             description2: 'https://v3.vuejs.org/',
           },
           {
             id: 2,
             name: 'FIREBASE',
-            description: 'Firebase - прекрасная технология от Google. Очень много крутых фишек. Например база данных в реальгом времени.',
-            description2: 'https://firebase.google.com/'
+            description: 'Firebase is a great technology from Google. It has many cool features, like a real-time database.',
+            description2: 'https://firebase.google.com/',
           },
           {
             id: 3,
             name: 'BOOTSTRAP',
-            description: 'Быстро создавайте и настраивайте адаптивные сайты, ориентированные на мобильные устройства, с помощью Bootstrap, самого популярного в мире инструментария с открытым исходным кодом, включающего переменные и миксины Sass, гибкую сеточную систему, обширные готовые компоненты и мощные плагины JavaScript.\n' +
-                '\n',
-            description2: 'https://getbootstrap.com/'
+            description: 'Quickly design and customize responsive, mobile-first sites with Bootstrap, the world’s most popular open source toolkit, featuring Sass variables and mixins, a flexible grid system, extensive prebuilt components, and powerful JavaScript plugins.',
+            description2: 'https://getbootstrap.com/',
           },
           {
             id: 4,
             name: 'VITE',
-            description: 'Инструменты нового поколения для внешнего интерфейса',
-            description2: 'https://vitejs.dev/'
+            description: 'Next generation frontend tooling',
+            description2: 'https://vitejs.dev/',
           }
-        ],
+        ]
       },
       {
         id: 5,
@@ -212,28 +210,86 @@ export default {
           {
             id: 1,
             name: 'VUE2',
-            description: 'Vue - шустрый, производительный, разносторонний.',
+            description: 'Vue - fast, performant, and versatile.',
             description2: 'https://v3.vuejs.org/',
           },
           {
             id: 2,
-            name: 'Google Аналитика',
-            description: 'Google Analytics - ваша кровь. Когда возникает аномалия или она выходит из строя, вы хотите знать об этом немедленно.',
+            name: 'Google Analytics',
+            description: 'Google Analytics is your lifeblood. When an anomaly occurs or it goes down, you want to know immediately.',
             description2: 'https://analytics.google.com/',
           },
           {
             id: 3,
             name: 'FIREBASE',
-            description: 'Firebase - прекрасная технология от Google. Очень много крутых фишек. Например база данных в реальгом времени.',
-            description2: 'https://firebase.google.com/'
+            description: 'Firebase is a great technology from Google. It has many cool features, like a real-time database.',
+            description2: 'https://firebase.google.com/',
           },
           {
             id: 4,
             name: 'VUETIFY',
-            description: 'Vuetify - это библиотека пользовательского интерфейса Vue с красиво созданными вручную компонентами материалов.',
-            description2: 'https://vuetifyjs.com'
+            description: 'Vuetify is a Vue UI library with beautifully handcrafted material components.',
+            description2: 'https://vuetifyjs.com',
           }
         ],
+      },
+      {
+        id: 6,
+        title: 'Worship',
+        link: 'https://oleksandr-3787c.web.app/',
+        text: 'Vue2, Firebase, Google Аналитика, Vuetify',
+        sectionClass: 'sec5',
+        seen: false,
+        arrayInfo: [
+          {
+            id: 1,
+            name: 'NUXT',
+            description: 'Nuxt - fast, performant, and versatile.',
+            description2: 'https://nuxtjs.org/',
+          },
+          {
+            id: 2,
+            name: 'Google Analytics',
+            description: 'Google Analytics is your lifeblood. When an anomaly occurs or it goes down, you want to know immediately.',
+            description2: 'https://analytics.google.com/',
+          },
+          {
+            id: 3,
+            name: 'FIREBASE',
+            description: 'Firebase is a great technology from Google. It has many cool features, like a real-time database.',
+            description2: 'https://firebase.google.com/',
+          },
+          {
+            id: 4,
+            name: 'VUETIFY',
+            description: 'Vuetify is a Vue UI library with beautifully handcrafted material components.',
+            description2: 'https://vuetifyjs.com/',
+          },
+          {
+            id: 5,
+            name: 'SASS',
+            description: 'Sass is a powerful CSS preprocessor that allows you to use variables, nested rules, and mixins.',
+            description2: 'https://sass-lang.com/',
+          },
+          {
+            id: 6,
+            name: 'ESLint',
+            description: 'ESLint is a code analysis tool that helps find and fix problems in your JavaScript code.',
+            description2: 'https://eslint.org/',
+          },
+          {
+            id: 7,
+            name: 'SweetAlert2',
+            description: 'SweetAlert2 is a beautiful and customizable library for creating alerts.',
+            description2: 'https://sweetalert2.github.io/',
+          },
+          {
+            id: 8,
+            name: 'VeeValidate',
+            description: 'VeeValidate is a library for form validation in Vue.',
+            description2: 'https://vee-validate.logaretm.com/',
+          }
+        ]
       },
     ]
   }),
