@@ -14,9 +14,7 @@
           class="card-title"
           style="color: #3f51b5"
       >
-        <p>
-          {{ $t(`pictureTitle${categoryKey}`) }}
-        </p>
+        {{ $t(`pictureTitle${categoryKey}`) }}
 			</h5>
       <p>
         {{ $t(`pictureText${categoryKey}`) }}
@@ -44,8 +42,8 @@
             const { observe, unobserve, isShown } = useIntersectionObserver()
 
             const pictureImageCode = computed(() => {
-                const a = props.picture.imageCode
-								return `https://drive.google.com/uc?export=view&id=${a}`
+              const a = props.picture.id
+              return `../src/assets/images/categories/${a}.jpeg`
             })
             const pictureTitle = computed(() => {
                 return props.picture.title

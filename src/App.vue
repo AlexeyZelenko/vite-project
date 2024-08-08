@@ -65,11 +65,9 @@
   <!--  ФотоОбложка-->
   <div class="jumbotron2">
     <div class="container">
-      <h1>
-        <h4 style="color: white; text-shadow: 2px 2px 2px #0d0e0e">
-          {{ $t('title.value', { value: 'КОМПАНИЯ-РАЗРАБОТЧИК ІТ ПРОДУКТОВ' }) }}
-        </h4>
-      </h1>
+      <h4 style="color: white; text-shadow: 2px 2px 2px #0d0e0e">
+        {{ $t('title.value', { value: 'КОМПАНИЯ-РАЗРАБОТЧИК ІТ ПРОДУКТОВ' }) }}
+      </h4>
     </div>
   </div>
 
@@ -82,7 +80,7 @@
     <div
         class="row row-cols-1 row-cols-md-2 g-4 "
         v-for="picture in arrayPictures"
-        :key="picture.key"
+        :key="picture.id"
         style="justify-content: center"
     >
       <div class="col p-4">
@@ -94,11 +92,9 @@
   <!--  ФотоОбложка-->
   <div class="jumbotron2">
     <div class="container">
-      <h1>
-        <h4 style="color: white; text-shadow: 2px 2px 2px #0d0e0e">
-          {{ $t('ourProducts.value', { value: '' }) }}
-        </h4>
-      </h1>
+      <h4 style="color: white; text-shadow: 2px 2px 2px #0d0e0e">
+        {{ $t('ourProducts.value', { value: '' }) }}
+      </h4>
     </div>
   </div>
 
@@ -123,7 +119,7 @@
 <script>
 import SwitchLanguage from '/@/components/SwitchLanguage.vue'
 import CategoriesPhotoCard from '/@/components/CategoriesPhotoCard.vue'
-import { defineAsyncComponent, defineComponent, ref, reactive, computed } from "vue"
+import { defineComponent, ref, computed } from "vue"
 
 
 export default defineComponent({
@@ -178,7 +174,53 @@ export default defineComponent({
         theme
       }
     },
-  })
+    data: () => ({
+      sections: [
+        {
+          id: 1,
+          title: 'bv.ck.ua',
+          link: 'https://bv.ck.ua',
+          text: 'Vue3, TypeScript, Firebase, Vuex, GoogleDisk, API Youtube, API Google Maps, собственные NPM',
+          sectionClass: 'sec1',
+          seen: true
+        },
+        {
+          id: 2,
+          title: 'nask.com.ua',
+          link: 'https://nusk-9e136.firebaseapp.com/',
+          text:'Vue2, Nuxt, Vuex, Video, Music',
+          sectionClass: 'sec2',
+          seen: true
+        },
+        {
+          id: 3,
+          title: 'teploservis68.com.ua',
+          link: 'https://nuxt-shop-9842c.web.app/',
+          text: 'Nuxt, Vue2, Firebase, Google Аналитика, Vuetify',
+          sectionClass: 'sec3',
+          seen: false
+        },
+        {
+          id: 4,
+          title: 'COMFORT.UA',
+          link: 'https://prazdnik-37ddf.web.app/flat',
+          sectionClass: 'sec4',
+          seen: false
+        },
+        {
+          id: 5,
+          title: 'shop',
+          link: 'https://online-shop-34af2.web.app/',
+          text: 'Vue2, Firebase, Google Аналитика, Vuetify',
+          sectionClass: 'sec5',
+          seen: false
+        },
+      ]
+    }),
+    mounted() {
+      console.log('App.vue mounted', this.arrayPictures)
+    }
+})
 </script>
 
 <style scoped>
@@ -242,17 +284,6 @@ iframe {
 .services p {
   color: #5c5858;
   margin-top: 15px;
-}
-.jumbotron {
-  background-image: url(./assets/img/jumbotron.jpg);
-  background-size: cover;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  min-height: 250px;
-  text-align: center;
-  clear: both;
 }
 .jumbotron2 {
   background-image: url(./assets/img/jumbotron2.jpg);
