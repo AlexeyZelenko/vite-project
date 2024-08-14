@@ -1,4 +1,4 @@
-import{f as r}from"./@firebase.1674cd28.js";var a="firebase",e="8.10.1";/**
+import{f as r}from"./@firebase-D7vaqjPC.js";var a="firebase",e="8.10.1";/**
  * @license
  * Copyright 2018 Google LLC
  *
