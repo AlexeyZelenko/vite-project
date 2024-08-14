@@ -35,7 +35,14 @@ import useIntersectionObserver from '../composables/useIntersectionObserver'
 export default {
   name: 'CatalogItem',
   props: {
-    data: Object
+      index: {
+          type: Number,
+          required: true
+      },
+      data: {
+          type: Object,
+          required: true
+      }
   },
   setup (props) {
     const el = ref(null)

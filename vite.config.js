@@ -1,8 +1,9 @@
-import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import path from 'path';
 import Components from 'unplugin-vue-components/vite';
 import {PrimeVueResolver} from '@primevue/auto-import-resolver';
+import { fileURLToPath, URL } from 'url'
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   resolve: {
@@ -28,5 +29,10 @@ export default defineConfig({
       resolvers: [
         PrimeVueResolver()
       ]
-    })]
+    })],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: ['./vitest.setup.js'],
+  }
 });
