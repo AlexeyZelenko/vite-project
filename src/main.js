@@ -10,11 +10,17 @@ import 'firebase/auth'
 import 'firebase/storage'
 import 'firebase/analytics'
 import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'//?Выдает ошибку в консоли
 import { createI18n } from 'vue-i18n'
 import en from "./locale/en.json"
 import ua from "./locale/ua.json"
 import ru from "./locale/ru.json"
+import PrimeVue from 'primevue/config';
+import './styles/styles.scss';
+import OrganizationChart from 'primevue/organizationchart';
+import 'primeicons/primeicons.css';
+import Aura from '@primevue/themes/aura';
+
+
 
 export const db = firebase.initializeApp({
   apiKey: "AIzaSyAnv0Xx7PyYGozncn-x41RkkfCS44xwNOQ",
@@ -44,4 +50,15 @@ createApp(App)
     .use(i18n)
     .use(router)
     .use(store)
+    .use(PrimeVue, {
+      theme: {
+        preset: Aura,
+        options: {
+          prefix: 'p',
+          darkModeSelector: 'system',
+          cssLayer: false
+        }
+      }
+    })
+    .component('OrganizationChart', OrganizationChart)
     .mount('#app')
