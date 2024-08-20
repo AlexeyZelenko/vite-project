@@ -1,3 +1,49 @@
+<script setup lang="ts">
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import useIntersectionObserver from '@/composables/useIntersectionObserver'
+import ImageItem from '@/components/ImageItem.vue'
+
+const name = 'CategoriesPhotoCard'
+
+const { observe, unobserve } = useIntersectionObserver()
+
+// Определяем интерфейс для данных
+interface Picture {
+  id: string;
+  title: string;
+  text: string;
+}
+
+// Определяем свойства компонента с типизацией
+const props = defineProps<{ picture: Picture }>()
+
+// Ссылки на элементы
+const el = ref<HTMLElement | null>(null)
+
+// Вычисляемые свойства для данных
+const pictureImageCode = computed(() => {
+  return new URL(`../assets/img/categories/${props.picture.id}.jpeg`, import.meta.url).href
+})
+
+const pictureTitle = computed(() => props.picture.title)
+
+const pictureText = computed(() => props.picture.text)
+
+const categoryKey = computed(() => props.picture.id)
+
+onMounted(() => {
+  if (el.value) {
+    observe(el.value)
+  }
+})
+
+onBeforeUnmount(() => {
+  if (el.value) {
+    unobserve(el.value)
+  }
+})
+</script>
+
 <template>
 	<div
 			ref="el"
@@ -21,56 +67,3 @@
 		</div>
 	</div>
 </template>
-
-<script>
-    import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
-    import useIntersectionObserver from '../composables/useIntersectionObserver'
-    import ImageItem from '@/components/ImageItem.vue'
-
-    export default {
-        name: 'CategoriesPhotoCard',
-        props: {
-            picture: Object
-        },
-				components: {
-            ImageItem
-				},
-        setup (props) {
-            const photo = ref({})
-            const el = ref(null)
-            const { observe, unobserve, isShown } = useIntersectionObserver()
-
-            const pictureImageCode = computed(() => {
-              const a = props.picture.id
-              return new URL(`../assets/img/categories/${a}.jpeg`, import.meta.url).href;
-            })
-            const pictureTitle = computed(() => {
-                return props.picture.title
-            })
-
-            const pictureText = computed(() => {
-              return props.picture.text
-            })
-            const categoryKey = computed(() => {
-                return props.picture.id
-            })
-
-            onMounted(() => {
-                observe(el.value)
-            })
-
-            onBeforeUnmount(() => {
-                unobserve(el.value)
-            })
-            return {
-                pictureImageCode,
-                el,
-                isShown,
-                pictureTitle,
-                pictureText,
-                photo,
-                categoryKey
-            }
-        }
-    }
-</script>

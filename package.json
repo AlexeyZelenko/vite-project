@@ -2,7 +2,7 @@
   "name": "infinite",
   "version": "0.0.1",
   "scripts": {
-    "dev": "vite",
+    "dev": "VITE_CJS_TRACE=true vite dev",
     "build": "vite build",
     "serve": "vite preview",
     "deploy firebase": "firebase deploy",

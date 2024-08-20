@@ -18,7 +18,7 @@
     export default {
         name: 'SwitchLocale',
         data() {
-            return { langs: ['en', 'ru', 'ua'] }
+            return { langs: ['ua', 'ru', 'en'] }
         }
     }
 </script>
