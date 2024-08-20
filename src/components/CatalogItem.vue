@@ -28,55 +28,36 @@
   </div>
 </template>
 
-<script>
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+<script setup lang="ts">
+import { ref, computed, onMounted, onBeforeUnmount, defineProps } from 'vue'
 import useIntersectionObserver from '../composables/useIntersectionObserver'
 
-export default {
-  name: 'CatalogItem',
-  props: {
-    data: Object
-  },
-  setup (props) {
-    const el = ref(null)
-    const { observe, unobserve, isShown } = useIntersectionObserver()
-
-    const id = computed(
-        () => props.data.id
-    )
-
-    const title = computed(
-      () => props.data.title
-    )
-
-    const link = computed(
-        () => props.data.link
-    )
-    const text = computed(
-      () => props.data.text
-    )
-    const sectionClass = computed(
-      () => props.data.sectionClass
-    )
-
-    onMounted(() => {
-      observe(el.value)
-    })
-
-    onBeforeUnmount(() => {
-      unobserve(el.value)
-    })
-    return {
-      id,
-      link,
-      title,
-      text,
-      sectionClass,
-      isShown,
-      el
-    }
-  }
+interface DataProps {
+  id: string;
+  title: string;
+  link: string;
+  text: string;
+  sectionClass: string;
 }
+
+const props = defineProps<{ data: DataProps }>()
+
+const el = ref<HTMLElement | null>(null)
+const { observe, unobserve, isShown } = useIntersectionObserver()
+
+const id = computed(() => props.data.id)
+const title = computed(() => props.data.title)
+const link = computed(() => props.data.link)
+const text = computed(() => props.data.text)
+const sectionClass = computed(() => props.data.sectionClass)
+
+onMounted(() => {
+  if (el.value) observe(el.value)
+})
+
+onBeforeUnmount(() => {
+  if (el.value) unobserve(el.value)
+})
 </script>
 
 <style scoped>
