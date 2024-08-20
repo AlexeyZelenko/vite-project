@@ -22,8 +22,15 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",
     "@vue/compiler-sfc": "^3.4.36",
+    "@vue/test-utils": "^2.4.6",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1",
-    "vite": "^5.4.0"
+    "unplugin-vue-components": "^0.27.4",
+    "vite": "^5.4.0",
+    "vitest": "^2.0.5",
+    "vue": "^3.4.37",
+    "vue-jest": "^5.0.0-alpha.10"
   }
 }
