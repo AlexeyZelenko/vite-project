@@ -12,11 +12,11 @@
         <h4>
           {{ $t('title.value', { value: 'КОМПАНИЯ-РАЗРАБОТЧИК ІТ ПРОДУКТОВ' }) }}
         </h4>
-<!--        <h5-->
-<!--            style="color: white; margin-bottom: 50px"-->
-<!--        >-->
-<!--          {{ $t('subtitle.value', { value: 'УСПЕШНЫЕ ПРОЕКТЫ СОЗДАЮТСЯ ТОЛЬКО КОМАНДОЙ' }) }}-->
-<!--        </h5>-->
+        <h6
+            style="color: white; margin-bottom: 50px"
+        >
+          {{ $t('subtitle.value', { value: 'УСПЕШНЫЕ ПРОЕКТЫ СОЗДАЮТСЯ ТОЛЬКО КОМАНДОЙ' }) }}
+        </h6>
       </div>
     </div>
     <video
@@ -104,15 +104,17 @@
 
   </div>
 
-<!--  <h2 style="color: white; text-shadow: 2px 2px 2px #0d0e0e">-->
-<!--    {{ $t('technologies.value', { value: '' }) }}-->
-<!--  </h2>-->
-<!--  <iframe-->
-<!--      src="https://alexeyzelenko.github.io/my-skills"-->
-<!--      width="100%"-->
-<!--      height="100%"-->
-<!--  ></iframe>-->
-
+    <ul class="nav justify-content-center align-items-center bg-dark" style="height: 100px">
+        <li class="nav-item">
+            <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://alexeyzelenko.github.io/my-skills"
+                target="_blank"
+            >{{ $t('technologies.value', { value: '' }) }}
+            </a>
+        </li>
+    </ul>
 
 </template>
 
@@ -299,7 +301,7 @@ iframe {
 /* Media Queries */
 @media (max-width: 767px) {
   .overlay_min {
-    padding-top: 10%;
+    padding-top: 0;
   }
   h1 {
     font-size: 30px;
@@ -329,7 +331,7 @@ iframe {
 }
 @media (max-width: 575px) {
   .overlay_min {
-    padding-top: 30%;
+    padding-top: 10%;
   }
   h1 {
     font-size: 25px;
@@ -354,6 +356,12 @@ iframe {
     display: block;
   }
 
+}
+
+@media (min-width: 980px) {
+    .overlay_min {
+        padding-top: 0;
+    }
 }
 
 

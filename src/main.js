@@ -16,9 +16,11 @@ import ua from "./locale/ua.json"
 import ru from "./locale/ru.json"
 import PrimeVue from 'primevue/config';
 import './styles/styles.scss';
+import './scss/styles.scss'
 import OrganizationChart from 'primevue/organizationchart';
 import 'primeicons/primeicons.css';
 import Aura from '@primevue/themes/aura';
+import * as bootstrap from 'bootstrap'
 
 
 

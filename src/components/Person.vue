@@ -57,7 +57,7 @@ const data = ref({
       styleClass: '!bg-teal-100 text-black rounded-xl',
       data: {
         image: 'https://primefaces.org/cdn/primevue/images/avatar/stephenshaw.png',
-        name: 'Oleksii Zelenko',
+        name: 'Oleksii',
         title: 'CTO'
       },
       children: [
@@ -79,9 +79,7 @@ const data = ref({
 .v-person-list {
   width: 100%;
   padding: 1rem;
-  border-radius: 4px;
-  background-color: #f4f4f4;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border: none;
 
     &--block {
         display: flex;

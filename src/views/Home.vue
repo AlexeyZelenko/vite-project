@@ -1,11 +1,12 @@
 <template>
-  <!--  Фото с описанием-->
-  <CatalogItem
-      v-for="(product, i) in sections"
-      :key="product.title"
-      :index="i"
-      :data="product"
-  ></CatalogItem>
+  <div>
+      <CatalogItem
+              v-for="(product, i) in sections"
+              :key="product.title"
+              :index="i"
+              :data="product"
+      ></CatalogItem>
+  </div>
 </template>
 
 <script setup>
@@ -41,7 +42,7 @@ const sections = ref([
       id: 4,
       title: 'COMFORT.UA',
       link: 'https://prazdnik-37ddf.web.app/flat',
-      sectionClass: 'sec4',
+      sectionClass: '',
       seen: false
     },
     {
@@ -57,7 +58,7 @@ const sections = ref([
         title: 'Worship',
         link: 'https://oleksandr-3787c.web.app/',
         text: 'Vue2, Firebase, Google Аналитика, Vuetify, CI/CD',
-        sectionClass: 'sec6',
+        sectionClass: '',
         seen: false
       }
 ])

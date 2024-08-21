@@ -14,16 +14,22 @@
         </button>
       </router-link>
     </div>
-    <section
-        ref="sectionEl"
-        :class="isShown ? sectionClass : null"
-    ></section>
+    <div ref="sectionEl"
+    >
+        <section v-if="sectionClass" :class="isShown ? sectionClass : null"></section>
+        <section v-else class="">
+            <div class="person-container">
+                <Person/>
+            </div>
+        </section>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount, toRefs } from 'vue'
 import useIntersectionObserver from '@/composables/useIntersectionObserver'
+import Person from "@/components/Person.vue";
 
 interface DataProps {
   id: string;
@@ -50,7 +56,7 @@ onBeforeUnmount(() => {
 })
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 body {
   margin: 0;
   padding: 10px;
@@ -66,6 +72,13 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+    .person-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
 }
 
 .sec1 { background-image: url('../assets/images/picture1.png'); }
