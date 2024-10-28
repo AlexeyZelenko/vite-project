@@ -6,7 +6,7 @@
 </template>
 
 <style lang="scss">
-@import '../scss/_variables.scss';
+@use '../scss/_variables.scss';
 	.ripple {
 		display: inline-block;
 		position: absolute;
