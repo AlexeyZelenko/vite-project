@@ -81,7 +81,7 @@ section {
     }
 }
 
-.sec1 { background-image: url('../assets/images/picture1.png');}
+.sec1 { background-image: url('../assets/images/moby/moby-11.png');}
 .sec2 { background-image: url('../assets/images/picture2.png');}
 .sec3 { background-image: url('../assets/images/picture-3.png');}
 .sec4 { background-image: url('../assets/images/moby/moby-7.png');}
@@ -90,9 +90,8 @@ section {
 .sec7 { background-image: url('../assets/images/moby/moby-8.png');}
 .sec8 { background-image: url('../assets/images/moby/moby-9.png');}
 .sec9 { background-image: url('../assets/images/moby/moby-10.png');}
-.sec10 {
-  background-image: url('../assets/images/moby/moby-default.png');
-}
+.sec10 { background-image: url('../assets/images/picture1.png');}
+.sec11 { background-image: url('../assets/images/moby/moby-default.png');}
 
 .sec-text {
   padding: 4% 8%;

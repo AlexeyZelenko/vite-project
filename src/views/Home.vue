@@ -16,9 +16,9 @@ const name = 'Home'
 const sections = ref([
    {
       id: 1,
-      title: 'bv.ck.ua',
-      link: 'https://bv.ck.ua',
-      text: 'Vue3, TypeScript, Firebase, Vuex, GoogleDisk, API Youtube, API Google Maps, собственные NPM',
+      title: 'interview',
+      link: 'https://interview-infinity.web.app/',
+      text: 'Vue3, TypeScript, Firebase, Pinia, ChatGPT',
       sectionClass: 'sec1',
       seen: true
    },
@@ -85,6 +85,14 @@ const sections = ref([
       text: 'Vue.js 3 with TypeScript, Tailwind CSS, AWS Amplify, Amazon DynamoDB, Amazon Cognito, DeepL API, Spoonacular API',
       sectionClass: 'sec9',
       seen: false
-   }
+   },
+   {
+      id: 10,
+      title: 'bv.ck.ua',
+      link: 'https://bv.ck.ua',
+      text: 'Vue3, TypeScript, Firebase, Vuex, GoogleDisk, API Youtube, API Google Maps, собственные NPM',
+      sectionClass: 'sec10',
+      seen: true
+   },
 ])
 </script>

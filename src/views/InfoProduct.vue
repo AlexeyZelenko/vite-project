@@ -63,9 +63,9 @@ export default defineComponent({
          sections: [
             {
                id: 1,
-               title: 'bv.ck.ua',
-               link: 'https://bv.ck.ua',
-               text: 'Vue3, TypeScript, Firebase, Vuex, GoogleDisk, API Youtube, API Google Maps, NPM',
+               title: 'DevHire',
+               link: 'https://interview-infinity.web.app/',
+               text: 'Vue3, TypeScript, Firebase, Pinia, ChatGPT',
                sectionClass: 'sec1',
                seen: true,
                arrayInfo: [
@@ -83,9 +83,9 @@ export default defineComponent({
                   },
                   {
                      id: 3,
-                     name: 'BOOTSTRAP',
-                     description: 'Quickly design and customize responsive, mobile-first sites with Bootstrap, the world’s most popular open source toolkit, featuring Sass variables and mixins, a flexible grid system, extensive prebuilt components, and powerful JavaScript plugins.',
-                     description2: 'https://getbootstrap.com/',
+                     name: 'tailwindcss',
+                     description: 'Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override.',
+                     description2: 'https://tailwindcss.com/',
                   }
                ],
             },
@@ -360,6 +360,34 @@ export default defineComponent({
                   },
                ],
                seen: false
+            },
+            {
+               id: 10,
+               title: 'bv.ck.ua',
+               link: 'https://bv.ck.ua',
+               text: 'Vue3, TypeScript, Firebase, Vuex, GoogleDisk, API Youtube, API Google Maps, NPM',
+               sectionClass: 'sec1',
+               seen: true,
+               arrayInfo: [
+                  {
+                     id: 1,
+                     name: 'VUE3',
+                     description: 'We chose Vue3 because we really wanted to master the new technology)',
+                     description2: 'https://v3.vuejs.org/',
+                  },
+                  {
+                     id: 2,
+                     name: 'FIREBASE',
+                     description: 'Firebase is a great technology from Google. It has many cool features, like a real-time database.',
+                     description2: 'https://firebase.google.com/',
+                  },
+                  {
+                     id: 3,
+                     name: 'BOOTSTRAP',
+                     description: 'Quickly design and customize responsive, mobile-first sites with Bootstrap, the world’s most popular open source toolkit, featuring Sass variables and mixins, a flexible grid system, extensive prebuilt components, and powerful JavaScript plugins.',
+                     description2: 'https://getbootstrap.com/',
+                  }
+               ],
             },
          ]
       };
