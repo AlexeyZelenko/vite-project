@@ -6,11 +6,18 @@
           class="overlay_min"
       >
         <SwitchLanguage />
-        <h1>
-          INFINITE
-        </h1>
+<!--        <h1>-->
+<!--          INFINITE-->
+<!--        </h1>-->
+         <div class="avatar-block">
+            <img
+                 src="./assets/avatar.jpg"
+                 alt="avatar"
+                 class="avatar"
+            />
+         </div>
         <h4>
-          {{ $t('title.value', { value: 'КОМПАНИЯ-РАЗРАБОТЧИК ІТ ПРОДУКТОВ' }) }}
+          {{ $t('title.value', { value: 'РАЗРАБОТЧИК ІТ ПРОДУКТОВ' }) }}
         </h4>
 <!--        <h5-->
 <!--            style="color: white; margin-bottom: 50px"-->
@@ -66,7 +73,7 @@
   <div class="jumbotron2">
     <div class="container">
       <h4 style="color: white; text-shadow: 2px 2px 2px #0d0e0e">
-        {{ $t('title.value', { value: 'КОМПАНИЯ-РАЗРАБОТЧИК ІТ ПРОДУКТОВ' }) }}
+        {{ $t('title.value', { value: 'РАЗРАБОТЧИК ІТ ПРОДУКТОВ' }) }}
       </h4>
     </div>
   </div>
@@ -161,7 +168,37 @@ export default defineComponent({
           title: 'WEB-ПРИЛОЖЕНИЕ',
           imageCode: '1hYtF25Z4YPllKqohh0-Ad5rmNVz_8fIt',
           text: 'Проэктирование и создание инструментов для бизнеса'
-        }
+        },
+         {
+            id: '4',
+            title: 'ОПТИМИЗАЦИЯ И ТЕСТИРОВАНИЕ',
+            imageCode: '1FmpsOEf2mYFSAHja3K6DAk0xmCaiu_24',
+            text: 'Производительность и надёжность проектов'
+         },
+         {
+            id: '5',
+            title: 'SEO ОПТИМИЗАЦИЯ',
+            imageCode: '152LGxL6NQDEeL2_evXxzw1HFNa6i75aY',
+            text: 'Увеличение видимости и аналитика'
+         },
+         {
+             id: '6',
+             title: 'ДИЗАЙН И ПРОТОТИПИРОВАНИЕ',
+             imageCode: '1hYtF25Z4YPllKqohh0-Ad5rmNVz_8fIt',
+             text: 'От идеи до воплощения'
+         },
+         {
+             id: '7',
+             title: 'ИНТЕГРАЦИЯ СЕРВИСОВ',
+             imageCode: '1FmpsOEf2mYFSAHja3K6DAk0xmCaiu_24',
+             text: 'Расширение функциональности'
+         },
+         {
+             id: '8',
+             title: 'УПРАВЛЕНИЕ ПРОЕКТАМИ',
+             imageCode: '152LGxL6NQDEeL2_evXxzw1HFNa6i75aY',
+             text: 'Организация и сотрудничество'
+         }
       ])
 
       return {
@@ -178,6 +215,28 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.avatar-block {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: #fff;
+    z-index: 2;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.avatar {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
 .overlay {
   background: rgba(0,0,0,0.6);
   position: absolute;

@@ -3,7 +3,7 @@
     "value": "more details"
   },
   "title": {
-    "value": "COMPANY-DEVELOPER OF IT PRODUCTS"
+    "value": "IT PRODUCT DEVELOPER"
   },
   "subtitle": {
     "value": "SUCCESSFUL PROJECTS ARE CREATED ONLY BY A TEAM"
@@ -18,28 +18,40 @@
     "value": "DEVELOPMENT"
   },
   "CRAWLER": {
-    "value": "SEO"
-  },
-  "title1": {
-    "value": "1"
-  },
-  "pictureTitle": {
-    "value": "4234"
+    "value": "OPTIMIZATION"
   },
   "pictureTitle1": "WEBSITE DEVELOPMENT",
-  "pictureTitle2": "INTERNET SHOPS",
-  "pictureTitle3": "WEB APP",
-  "pictureText1": "Digital product creation",
-  "pictureText2": "We create high-quality, simple and complex online stores",
-  "pictureText3": "Designing and creating business tools",
+  "pictureTitle2": "ONLINE STORES",
+  "pictureTitle3": "WEB APPLICATIONS",
+  "pictureTitle4": "OPTIMIZATION AND TESTING",
+  "pictureTitle5": "SEO OPTIMIZATION",
+  "pictureTitle6": "DESIGN AND PROTOTYPING",
+  "pictureTitle7": "SERVICE INTEGRATION",
+  "pictureTitle8": "PROJECT MANAGEMENT",
+  "pictureDescription1": "Experience in developing modern websites using HTML5, CSS (SCSS/SASS), JavaScript (ES6+), Vue.js, and PHP. I create responsive designs with cross-browser compatibility and modern UI/UX principles.",
+  "pictureDescription2": "Creating high-quality, fast, and complex online stores. Working with platforms like Magento, WordPress, and Joomla to develop online shops and advanced CMS systems. Integration with external services, such as payment systems, delivery, and analytics (Google Analytics, Tag Manager).",
+  "pictureDescription3": "Experience in developing SPAs (Single Page Applications) using Vue.js and Nuxt.js. Leveraging Tailwind, Bootstrap, and Vuetify for fast and high-quality interface creation. API integration and PWA development to improve performance.",
+  "pictureDescription4": "Performance optimization: implementing lazy loading, WebP, SVG, and ensuring CLS standards. Testing: Playwright and Vitest for unit and end-to-end testing. CI/CD: Automating processes with Jenkins and GitHub Actions.",
+  "pictureDescription5": "Configuring Google Analytics, Tag Manager, and SEO optimization of websites to improve search engine visibility. Using tools like Semrush and newrelic.com to analyze performance.",
+  "pictureDescription6": "Working with Figma to create design mockups and prototypes. Experience in graphic design using Photoshop and CorelDRAW. Delivering pixel-perfect layouts with a focus on modern and minimalist styles.",
+  "pictureDescription7": "Experience integrating with various services:\n\nFirebase for backend and data storage\nGoogle Maps for geolocation\nImplementing external APIs (e.g., payment systems and analytics).",
+  "pictureDescription8": "Experience with project management tools: Jira, Slack, and Microsoft Teams. Managing version control using Git and Bitbucket.",
+  "pictureText1": "Creating digital products",
+  "pictureText2": "We build high-quality, simple, and complex online stores",
+  "pictureText3": "Designing and creating tools for business",
+  "pictureText4": "Performance and project reliability",
+  "pictureText5": "Improving visibility and analytics",
+  "pictureText6": "From idea to implementation",
+  "pictureText7": "Expanding functionality",
+  "pictureText8": "Organization and collaboration",
   "technologies": {
     "value": "Technologies we work with"
   },
   "link": {
-    "value": "go over"
+    "value": "go to"
   },
   "product": {
-    "value": "details"
+    "value": "learn more"
   },
   "ourProducts": {
     "value": "OUR PRODUCTS"

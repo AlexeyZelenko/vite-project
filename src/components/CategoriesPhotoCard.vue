@@ -22,7 +22,7 @@ const el = ref<HTMLElement | null>(null)
 
 // Вычисляемые свойства для данных
 const pictureImageCode = computed(() => {
-  return new URL(`../assets/img/categories/${props.picture.id}.jpeg`, import.meta.url).href
+  return new URL(`../assets/img/categories/${props.picture.id}.webp`, import.meta.url).href
 })
 
 const pictureTitle = computed(() => props.picture.title)
@@ -56,14 +56,17 @@ onBeforeUnmount(() => {
 
 		<div class="card-body">
 			<h5
-          class="card-title"
-          style="color: #3f51b5"
-      >
-        {{ $t(`pictureTitle${categoryKey}`) }}
+                class="card-title"
+                style="color: #3f51b5"
+            >
+              {{ $t(`pictureTitle${categoryKey}`) }}
 			</h5>
-      <p>
-        {{ $t(`pictureText${categoryKey}`) }}
-      </p>
+            <p style="font-weight: bold">
+              {{ $t(`pictureText${categoryKey}`) }}
+            </p>
+            <p>
+              {{ $t(`pictureDescription${categoryKey}`) }}
+            </p>
 		</div>
 	</div>
 </template>

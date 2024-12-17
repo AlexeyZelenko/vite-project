@@ -16,7 +16,7 @@ const name = 'Home'
 const sections = ref([
    {
       id: 1,
-      title: 'interview',
+      title: 'Interview IT CRM',
       link: 'https://interview-infinity.web.app/',
       text: 'Vue3, TypeScript, Firebase, Pinia, ChatGPT',
       sectionClass: 'sec1',
@@ -24,9 +24,9 @@ const sections = ref([
    },
    {
       id: 2,
-      title: 'nask',
-      link: 'https://nusk-9e136.firebaseapp.com/',
-      text: 'Vue2, Nuxt, Vuex, Video, Music',
+      title: 'IT Interview Practice with AI',
+      link: 'https://playful-fairy-b32c38.netlify.app/',
+      text: 'Vue3, TypeScript, API ChatGpt, Firebase, TailwindCSS, Vite, Pinia',
       sectionClass: 'sec2',
       seen: true
    },

@@ -91,37 +91,12 @@ export default defineComponent({
             },
             {
                id: 2,
-               title: 'nask.com.ua',
-               link: 'https://nask.com.ua',
-               text: 'Vue2, Nuxt, Vuex, Video, Music',
+               title: 'IT Interview Practice with AI',
+               link: 'https://playful-fairy-b32c38.netlify.app/',
+               text: 'Vue3, TypeScript, API ChatGpt, Firebase, TailwindCSS, Vite, Pinia',
                sectionClass: 'sec2',
                seen: true,
-               arrayInfo: [
-                  {
-                     id: 1,
-                     name: 'VUE2',
-                     description: 'Vue - fast, performant, and versatile.',
-                     description2: 'https://v3.vuejs.org/',
-                  },
-                  {
-                     id: 2,
-                     name: 'NUXT',
-                     description: 'Greatly helps with SEO. Search engine robots are delighted with it.',
-                     description2: 'https://nuxtjs.org/',
-                  },
-                  {
-                     id: 3,
-                     name: 'FIREBASE',
-                     description: 'Firebase is a great technology from Google. It has many cool features, like a real-time database.',
-                     description2: 'https://firebase.google.com/',
-                  },
-                  {
-                     id: 4,
-                     name: 'VUETIFY',
-                     description: 'Vuetify is a Vue UI library with beautifully handcrafted material components.',
-                     description2: 'https://vuetifyjs.com',
-                  }
-               ],
+               arrayInfo: [],
             },
             {
                id: 3,
