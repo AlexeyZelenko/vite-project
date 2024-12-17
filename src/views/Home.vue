@@ -88,10 +88,18 @@ const sections = ref([
    },
    {
       id: 10,
-      title: 'bv.ck.ua',
+      title: 'BLV',
       link: 'https://bv.ck.ua',
       text: 'Vue3, TypeScript, Firebase, Vuex, GoogleDisk, API Youtube, API Google Maps, собственные NPM',
       sectionClass: 'sec10',
+      seen: true
+   },
+   {
+      id: 11,
+      title: 'Generate Your Workout Plan and Nutrition Plan with AI',
+      link: 'https://fitness-268b1.web.app/',
+      text: 'Vue3, TypeScript, API ChatGpt, Firebase, TailwindCSS, Vite',
+      sectionClass: 'sec11',
       seen: true
    },
 ])

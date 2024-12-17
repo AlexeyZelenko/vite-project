@@ -8,11 +8,6 @@
           {{ $t ? $t('link.value', { value: '' }) : 'Link' }}
         </button>
       </a>
-      <router-link :to="{ name: 'product', params: { title } }">
-        <button type="button" class="btn btn-outline-primary mx-2">
-          {{ $t ? $t('product.value', { value: '' }) : 'Product' }}
-        </button>
-      </router-link>
     </div>
     <div ref="sectionEl"
     >
@@ -81,17 +76,18 @@ section {
     }
 }
 
-.sec1 { background-image: url('../assets/images/moby/moby-11.png');}
-.sec2 { background-image: url('../assets/images/picture2.png');}
-.sec3 { background-image: url('../assets/images/picture-3.png');}
-.sec4 { background-image: url('../assets/images/moby/moby-7.png');}
-.sec5 { background-image: url('../assets/images/picture-4.png');}
-.sec6 { background-image: url('../assets/images/moby/moby-4.png');}
-.sec7 { background-image: url('../assets/images/moby/moby-8.png');}
-.sec8 { background-image: url('../assets/images/moby/moby-9.png');}
-.sec9 { background-image: url('../assets/images/moby/moby-10.png');}
-.sec10 { background-image: url('../assets/images/picture1.png');}
-.sec11 { background-image: url('../assets/images/moby/moby-default.png');}
+.sec1 { background-image: url('../assets/images/moby/moby-1.png');}
+.sec2 { background-image: url('../assets/images/moby/moby-2.png');}
+.sec3 { background-image: url('../assets/images/moby/moby-3.png');}
+.sec4 { background-image: url('../assets/images/moby/moby-4.png');}
+.sec5 { background-image: url('../assets/images/moby/moby-5.png');}
+.sec6 { background-image: url('../assets/images/moby/moby-6.png');}
+.sec7 { background-image: url('../assets/images/moby/moby-7.png');}
+.sec8 { background-image: url('../assets/images/moby/moby-8.png');}
+.sec9 { background-image: url('../assets/images/moby/moby-9.png');}
+.sec10 { background-image: url('../assets/images/moby/moby-10.png');}
+.sec11 { background-image: url('../assets/images/moby/moby-11.png');}
+.sec12 { background-image: url('../assets/images/moby/moby-default.png');}
 
 .sec-text {
   padding: 4% 8%;
@@ -108,28 +104,5 @@ section {
   font-size: 1em;
 }
 
-@media (max-width: 767px) {
-  section {
-    padding: 20px;
-  }
-
-  .sec1 { background-image: url('../assets/images/moby/moby-2.png'); }
-  .sec2 { background-image: url('../assets/images/moby/moby-1.png'); }
-  .sec3 { background-image: url('../assets/images/moby/moby-3.png'); }
-  .sec4 { background-image: url('../assets/images/moby/moby-4.png'); }
-  .sec5 { background-image: url('../assets/images/moby/moby-5.png'); }
-}
-
-@media (max-width: 500px) {
-  .sec1 { background-image: url('../assets/images/moby/moby-2.png'); }
-  .sec2 { background-image: url('../assets/images/moby/moby-1.png'); }
-  .sec3 { background-image: url('../assets/images/moby/moby-3.png'); }
-  .sec4 { background-image: url('../assets/images/moby/moby-7.png'); }
-  .sec5 { background-image: url('../assets/images/moby/moby-5.png'); }
-  .sec6 { background-image: url('../assets/images/moby/moby-4.png'); }
-  .sec7 { background-image: url('../assets/images/moby/moby-8.png'); }
-  .sec8 { background-image: url('../assets/images/moby/moby-9.png'); }
-  .sec9 { background-image: url('../assets/images/moby/moby-10.png'); }
-}
 </style>
 
