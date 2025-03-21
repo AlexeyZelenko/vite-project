@@ -87,7 +87,8 @@ section {
 .sec9 { background-image: url('../assets/images/moby/moby-9.png');}
 .sec10 { background-image: url('../assets/images/moby/moby-10.png');}
 .sec11 { background-image: url('../assets/images/moby/moby-11.png');}
-.sec12 { background-image: url('../assets/images/moby/moby-default.png');}
+.sec12 { background-image: url('../assets/images/moby/moby-12.png');}
+.sec13 { background-image: url('../assets/images/moby/moby-default.png');}
 
 .sec-text {
   padding: 4% 8%;

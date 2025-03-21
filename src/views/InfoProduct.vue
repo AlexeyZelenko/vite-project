@@ -92,7 +92,7 @@ export default defineComponent({
             {
                id: 2,
                title: 'IT Interview Practice with AI',
-               link: 'https://playful-fairy-b32c38.netlify.app/',
+               link: 'https://interview-practice-344fe.web.app/',
                text: 'Vue3, TypeScript, API ChatGpt, Firebase, TailwindCSS, Vite, Pinia',
                sectionClass: 'sec2',
                seen: true,
