@@ -110,5 +110,21 @@ const sections = ref([
     sectionClass: 'sec12',
     seen: true
   },
+  {
+    id: 13,
+    title: 'Cheat Sheets',
+    link: 'https://alexeyzelenko.github.io/MarkdownNavigator/',
+    text: 'Astro 5, Vue3, TypeScript, Vite, TailwindCSS',
+    sectionClass: 'sec13',
+    seen: true
+  },
+  {
+    id: 14,
+    title: 'Laravel12 - Vue3',
+    link: 'https://laravel-vue-main-hnozai.laravel.cloud/',
+    text: 'Laravel 12, Vue 3, TypeScript, Vite, TailwindCSS',
+    sectionClass: 'sec13',
+    seen: true
+  },
 ])
 </script>
