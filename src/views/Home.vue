@@ -126,5 +126,13 @@ const sections = ref([
     sectionClass: 'sec13',
     seen: true
   },
+  {
+    id: 15,
+    title: 'Шпаргалки по IT',
+    link: 'https://alexeyzelenko.github.io/vitepress/',
+    text: 'Vitepress',
+    sectionClass: 'sec13',
+    seen: true
+  },
 ])
 </script>
