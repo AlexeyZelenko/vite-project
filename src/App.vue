@@ -213,7 +213,8 @@ export default defineComponent({
 <style scoped lang="scss">
 .gallery {
   &-container {
-    margin-top: 50px;
+    max-width: 1400px;
+    margin: 50px auto;
     width: 100%;
     display: flex;
     flex-direction: row;
