@@ -80,18 +80,14 @@
 
 
 <!--  Сервисы-->
-  <div
-      class="container"
-      style="margin-top: 50px"
-  >
+  <div class="gallery-container">
     <div
-        class="row row-cols-1 row-cols-md-2 g-4 "
         v-for="picture in arrayPictures"
         :key="picture.id"
-        style="justify-content: center"
+        class="gallery-item"
     >
-      <div class="col p-4">
-        <CategoriesPhotoCard :picture="picture"/>
+      <div class="gallery-card-wrapper">
+        <CategoriesPhotoCard :picture="picture" class="gallery-card"/>
       </div>
     </div>
   </div>
@@ -214,7 +210,63 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+.gallery {
+  &-container {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &-item {
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    min-height: 500px;
+
+    // Mobile responsive breakpoints
+    @media (max-width: 1024px) {
+      width: 33.333%;
+    }
+
+    @media (max-width: 768px) {
+      width: 50%;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+
+  &-card-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-card {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 570px;
+
+    // Make sure images inside the card maintain consistent sizing
+    ::v-deep img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // This ensures the images cover the area without distortion
+      object-position: center;
+    }
+  }
+}
+
 .avatar-block {
     position: relative;
     width: 200px;
