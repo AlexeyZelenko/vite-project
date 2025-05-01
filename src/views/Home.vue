@@ -134,5 +134,13 @@ const sections = ref([
     sectionClass: 'sec13',
     seen: true
   },
+  {
+    id: 16,
+    title: 'IT COMPANY',
+    link: 'https://it-company-infinity.web.app/contacts',
+    text: 'Vue3',
+    sectionClass: 'sec13',
+    seen: true
+  },
 ])
 </script>
