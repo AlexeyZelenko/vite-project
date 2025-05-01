@@ -142,5 +142,13 @@ const sections = ref([
     sectionClass: 'sec13',
     seen: true
   },
+  {
+    id: 11,
+    title: 'ResonanceStudio',
+    link: 'https://unknown-character.web.app/',
+    text: 'Vue3',
+    sectionClass: 'sec13',
+    seen: true
+  },
 ])
 </script>
